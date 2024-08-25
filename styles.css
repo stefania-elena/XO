@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bb7fe0;
+    font-family: Courier, monospace, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #e4b2fa;
+    border: 1px solid #411270;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cell.x {
+    color: #420769;
+}
+
+.cell.o {
+    color: #420769;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#winningLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
